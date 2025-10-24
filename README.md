@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bitcoin Flow Analyzer - Frontend
 
-## Getting Started
+A modern React/Next.js frontend application for analyzing Bitcoin transaction flows and exchange data visualization.
 
-First, run the development server:
+## 🚀 Overview
 
+This frontend application provides an intuitive dashboard for visualizing Bitcoin flow analysis data. It displays exchange information, transaction patterns, and blockchain analytics through interactive charts and components.
+
+## ⚠️ Important Note
+
+**Backend Status**: The Python backend for this application is currently not hosted. Instead of live backend data, this frontend uses mock data for demonstration purposes.
+
+**Backend Repository**: The corresponding Python backend can be found at:
+[https://github.com/GihanEbi/bitcoin-flow-analyzer-backend.git](https://github.com/GihanEbi/bitcoin-flow-analyzer-backend.git)
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 14
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: Custom React components
+- **Data Visualization**: (Charts/graphs for Bitcoin flow analysis)
+
+## 📁 Project Structure
+
+```
+├── components/
+│   ├── Dashboard.tsx          # Main dashboard component
+│   └── ExchangeCard.tsx       # Exchange data visualization card
+├── hooks/
+│   └── useExchangeData.ts     # Custom hook for exchange data management
+├── src/
+│   └── app/
+│       ├── globals.css        # Global styles
+│       ├── layout.tsx         # Root layout
+│       └── page.tsx           # Home page
+├── types/
+│   └── index.ts               # TypeScript type definitions
+└── public/                    # Static assets
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ installed
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <your-frontend-repo-url>
+cd bitcoin-flow-analyzer-frontend
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📊 Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Exchange Data Visualization**: Interactive cards displaying exchange information
+- **Dashboard Analytics**: Comprehensive dashboard for Bitcoin flow analysis
+- **Responsive Design**: Mobile-friendly interface
+- **Mock Data Integration**: Currently uses mock data instead of live backend
 
-## Learn More
+## 🔧 Configuration
 
-To learn more about Next.js, take a look at the following resources:
+The application is currently configured to use mock data. When the backend is deployed, you'll need to:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Update API endpoints in the data fetching hooks
+2. Configure environment variables for backend URL
+3. Remove mock data implementations
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🤝 Contributing
 
-## Deploy on Vercel
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License.
+
+## 🔗 Related Repositories
+
+- **Backend**: [Bitcoin Flow Analyzer Backend](https://github.com/GihanEbi/bitcoin-flow-analyzer-backend.git)
+
+## 📞 Contact
+
+For questions or support, please open an issue in this repository.
